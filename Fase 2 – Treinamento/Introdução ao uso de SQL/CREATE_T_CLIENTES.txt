@@ -1,0 +1,20 @@
+USE [cliente]
+GO
+
+/****** Object:  Table [dbo].[t_clientes]    Script Date: 18/04/2022 22:13:30 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[t_clientes](
+	[CODIGO_CLIENTE] [smallint] NOT NULL,
+	[NOME_CLIENTE] [nvarchar](50) NOT NULL,
+	[DATA_NASCIMENTO] [date] NOT NULL,
+	[EMAIL] [nvarchar](50) NOT NULL,
+	[TELEFONE_CELULAR] [bigint] NOT NULL,
+	[UF] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+

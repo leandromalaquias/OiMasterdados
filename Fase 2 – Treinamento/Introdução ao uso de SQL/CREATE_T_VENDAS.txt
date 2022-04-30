@@ -1,0 +1,22 @@
+USE [cliente]
+GO
+
+/****** Object:  Table [dbo].[t_vendas]    Script Date: 18/04/2022 22:13:54 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[t_vendas](
+	[SKU] [nvarchar](50) NOT NULL,
+	[TAMANHO_PEDIDO] [tinyint] NOT NULL,
+	[LOJA] [nvarchar](50) NOT NULL,
+	[DATA_VENDA] [date] NOT NULL,
+	[MARCA] [nvarchar](50) NOT NULL,
+	[CODIGO_CLIENTE] [smallint] NOT NULL,
+	[PRECO_UNITARIO] [smallint] NOT NULL,
+	[CUSTO_UNITARIO] [smallint] NOT NULL
+) ON [PRIMARY]
+GO
+
